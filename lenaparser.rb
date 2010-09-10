@@ -8,8 +8,8 @@ require 'builder'
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 MAX_DURATION = 7
 MIN_DURATION = 1.5
-CHR_PER_SECOND = 12
-START_TIME = 0.0
+CHR_PER_SECOND = 14
+START_TIME = 36000.0
 SPEAKER_1 = "LENA"
 SPEAKER_2 = "TONY"
 SPEAKER_3 = "NO_NAME"
