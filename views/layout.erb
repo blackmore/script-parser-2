@@ -14,6 +14,25 @@
         </div>
       <% end %>
       <%= yield %>
+	<div id="howto">
+		<h3>Details</h3>
+		<ul class="speakerColours">
+			<li id="Yellow">LENA</li>
+			<li id="Cyan">DAVID</li>
+			<li id="green">TONY</li>
+		</ul>
+		<h3>How to</h3>
+		<ol>
+			<li>Open Script in MS word and do a search and replace - <strong>Advanced</strong></li>
+			<li><strong>Search</strong> for "^p" with formatting "Dialogs"</li>
+			<li><strong>Replace</strong> with "&#60;&#60;D^p" formatting "Dialogs"</li>
+			<li>Save as .txt - <strong>encoding UTF8</strong></li>
+			<li>Upload this file to this site - Download should start automatically</li>
+			<li><strong>Import</strong> file into EZTitles choosing "<strong>DFXP</strong>" as import profile (<strong>seconds</strong> as TC base)</li>
+		</ol>
+		<h3>Trouble shooting</h3>
+		<p>if you get the error that the file is in the wrong format then open the txt file in a good text editor (iMac - text mate) and save as UTF8 - Line endings "LF"</p>
+	</div>
   </div>
 </body>
 </html>
