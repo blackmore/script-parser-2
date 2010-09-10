@@ -44,7 +44,7 @@ class LenaParser
   def clean_text(string)
     string.chomp!
     string.gsub!(/^\s+|\s+$|\(.+\)/,'')
-    string.gsub!("‘"|"’", "'")
+    string.gsub!(/‘|’/, "'")
     string.gsub!(/\s{2}/,' ')
     string 
   end
