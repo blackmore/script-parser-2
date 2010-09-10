@@ -45,6 +45,7 @@ class LenaParser
     string.chomp!
     string.gsub!(/^\s+|\s+$|\(.+\)/,'')
     string.gsub!(/‘|’/, "'")
+    string.gsub!("…", '...')
     string.gsub!(/\s{2}/,' ')
     string 
   end
