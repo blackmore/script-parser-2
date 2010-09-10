@@ -8,11 +8,11 @@ require 'builder'
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 MAX_DURATION = 7
 MIN_DURATION = 1.5
-CHR_PER_SECOND = 14
+CHR_PER_SECOND = 15
 START_TIME = 36000.0
 SPEAKER_1 = "LENA"
-SPEAKER_2 = "TONY"
-SPEAKER_3 = "NO_NAME"
+SPEAKER_2 = "DAVID"
+SPEAKER_3 = "TONY"
 SPEAKER_4 = "NO_NAME"
 
 class LenaParser
@@ -44,6 +44,7 @@ class LenaParser
   def clean_text(string)
     string.chomp!
     string.gsub!(/^\s+|\s+$|\(.+\)/,'')
+    string.gsub!("‘"|"’", "'")
     string.gsub!(/\s{2}/,' ')
     string 
   end
@@ -97,7 +98,7 @@ build_DFXL = lambda do |subFile|
             end
           elsif dialog.speaker == SPEAKER_3
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
-              b.span(dialog.text, 'tts:color'=>"#00FFFF")
+              b.span(dialog.text, 'tts:color'=>"#00FF00")
             end
           elsif dialog.speaker == SPEAKER_4
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
