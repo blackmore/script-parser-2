@@ -142,13 +142,13 @@ post '/' do
       return erb :form
     end
     
-   #begin
+   begin
       @newxml = Tempfile.new("_NEW#{name}")
       @newxml.puts build_DFXL.call(LenaParser.new(tmpfile, name))
       @newxml.close
       send_file @newxml.path, :type => 'xml', :disposition => 'attachment', :filename => "#{name.sub(/.txt/i, "")}-#{Time.now}"
-   #rescue
-     # @error = "PROBLEM WITH FILE: Check that you have uploaded the correct"
+   rescue
+      @error = "PROBLEM WITH FILE: Check that you have uploaded the correct file format"
       return erb :form
-   #end
+   end
 end
