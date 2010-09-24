@@ -36,8 +36,11 @@ ul li{
 }
 
 li#Yellow {
-	color: #fdff00;
+	color: #ffff00;
 	
+}
+li#magenta{
+	color: #ff00ff;
 }
 
 ul.speakerColours li{
@@ -50,7 +53,7 @@ ul.speakerColours li{
 }
 
 li#Cyan {
-	color: #00fffd;
+	color: #00ffff;
 	background-color: #000;
 	width: 150px;
 }
