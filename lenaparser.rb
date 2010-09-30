@@ -7,12 +7,17 @@ require 'builder'
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 MAX_DURATION = 7
 MIN_DURATION = 1.5
+MAX_CHR_PER_LINE = 37
 CHR_PER_SECOND = 15
 START_TIME = 36000.0
 SPEAKER_1 = "LENA"
 SPEAKER_2 = "DAVID"
 SPEAKER_3 = "TONY"
 SPEAKER_4 = "RAFAEL"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# PARSER
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 class LenaParser
   attr_accessor :file_name, :dialogs, :tc
@@ -23,11 +28,11 @@ class LenaParser
 
      complete_text = file.read
      complete_text.scan(/^(.+)\r*\n(.+)<<D\r*\n/) do |speaker, text|
-       block = Dialog.new
-       block.speaker = clean_speaker(speaker)
-       block.text = clean_text(text)
-       block.duration = calc_duration(text)
-       @dialogs << block
+       if text.length > MAX_CHR_PER_LINE*2
+          split_on_sentences(speaker, text)
+        else
+          create_subtitle_object(speaker, text)
+       end
      end
   end
   
@@ -39,6 +44,19 @@ class LenaParser
        @duration = 0.0 # unit in seconds
     end
   end
+  
+  def create_subtitle_object(speaker, text)
+    block = Dialog.new
+    block.speaker = clean_speaker(speaker)
+    block.text = clean_text(text)
+    block.duration = calc_duration(text)
+    @dialogs << block
+  end
+  
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  # TOOLS
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  # Replaces some unicode chrs, apostrophes and removes extra white spaces
   
   def clean_text(string)
     if string
@@ -52,7 +70,10 @@ class LenaParser
       ""
     end
   end
-
+  
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  # Stripes out number from the name tag and capitalizes.
+  
   def clean_speaker(string)
     if string
       string.upcase!
@@ -66,7 +87,10 @@ class LenaParser
       "NO_SPEAKER"
     end
   end
-
+ 
+ # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ # Concerdering the max and min calculates a reading speed.
+ 
   def calc_duration(string)
     value = string.length.to_f*1/CHR_PER_SECOND
     number = case value
@@ -75,14 +99,51 @@ class LenaParser
       else value
     end
   end
+  
+  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+  # Splits large text blocks on sentences and question marks creating an array
+  # of results.
+  
+  def split_on_sentences(speaker, string)
+    aa = []
+    end_index = 0
+    start_index = nil
+    text_length = string.length
+    while true
+      if end_index < text_length
+        start_index = end_index
+        end_index = string.index(%r{\.|\?}, end_index)
+        end_index ||= text_length
+        aa << string[start_index...end_index.next].strip
+        end_index += 1
+      end
+      break  unless end_index < text_length
+    end
+    filter_array(speaker, aa)
+  end
+
+  # Takes results from above and groups values if they still comply to the
+  # max_chr_per_line.
+  
+  def filter_array(speaker, aa)
+    aa.each_with_index do |val, inx|
+      if aa[inx.next]
+        if val.length && aa[inx.next].length < MAX_CHR_PER_LINE
+          aa[inx] << " #{aa[inx.next]}"
+          aa.delete_at(inx.next)
+        end
+      end
+    end
+    aa.each do |text|
+      create_subtitle_object(speaker, text)
+    end
+  end
 end
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # BUILDER
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-#- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-# build_xmeml = lambda do |subFile|
-#   b = Builder::XmlMarkup.new(:indent => 4)
+
 build_DFXL = lambda do |subFile|
   b = Builder::XmlMarkup.new(:indent => 2)
   xmeml = b.instruct!(:xml, :encoding => "UTF-8")
@@ -142,13 +203,13 @@ post '/' do
       return erb :form
     end
     
-   begin
+   #begin
       @newxml = Tempfile.new("_NEW#{name}")
       @newxml.puts build_DFXL.call(LenaParser.new(tmpfile, name))
       @newxml.close
       send_file @newxml.path, :type => 'xml', :disposition => 'attachment', :filename => "#{name.sub(/.txt/i, "")}-#{Time.now}"
-   rescue
+   #rescue
       @error = "PROBLEM WITH FILE: Check that you have uploaded the correct file format"
       return erb :form
-   end
+   #end
 end
