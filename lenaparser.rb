@@ -63,8 +63,8 @@ class LenaParser
     if string
       string.chomp!
       string.gsub!(/\t+|\(.+\)\s*/,'')
-      string.gsub!(/‘|’/, "'")
-      string.gsub!(/…|\.\.\./, "__*")
+      string.gsub!(/‘|’|„|“/, "'")
+      string.gsub!(/…|\.\.\./, "__*") # Used the three marks to keep the count clean
       string.squeeze(" ").strip!
       string
     else
