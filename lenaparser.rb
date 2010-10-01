@@ -62,11 +62,10 @@ class LenaParser
   def clean_text(string)
     if string
       string.chomp!
-      string.gsub!(/\t+|\(.+\)\s*/,'')
+      string.gsub!(/\t+|\(.+?\)\s*/,'')
       string.gsub!(/‘|’|„|“/, "'")
       string.gsub!(/…|\.\.\./, "__*") # Used the three marks to keep the count clean
-      string.squeeze(" ").strip!
-      string
+      string.squeeze(" ").strip
     else
       ""
     end
@@ -95,8 +94,8 @@ class LenaParser
   def calc_duration(string)
     value = string.length.to_f*1/CHR_PER_SECOND
     number = case value
-      when 0..MIN_DURATION : MIN_DURATION
-      when MAX_DURATION..100 : MAX_DURATION
+      when 0..MIN_DURATION then MIN_DURATION
+      when MAX_DURATION..100 then MAX_DURATION
       else value
     end
   end
