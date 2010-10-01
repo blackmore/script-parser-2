@@ -28,6 +28,7 @@ class LenaParser
 
      complete_text = file.read
      complete_text.scan(/^(.+)\r*\n(.+)<<D\r*\n/) do |speaker, text|
+       clean_text(text)
        if text.length > MAX_CHR_PER_LINE*2
           split_on_sentences(speaker, text)
         else
@@ -48,7 +49,7 @@ class LenaParser
   def create_subtitle_object(speaker, text)
     block = Dialog.new
     block.speaker = clean_speaker(speaker)
-    block.text = clean_text(text)
+    block.text = text.gsub("__*", "...")
     block.duration = calc_duration(text)
     @dialogs << block
   end
@@ -61,10 +62,10 @@ class LenaParser
   def clean_text(string)
     if string
       string.chomp!
-      string.gsub!(/^\s+|\s+$|\(.+\)/,'')
+      string.gsub!(/\t+|\(.+\)\s*/,'')
       string.gsub!(/‘|’/, "'")
-      string.gsub!("…", '...')
-      string.gsub!(/\s{2}/,' ')
+      string.gsub!(/…|\.\.\./, "__*")
+      string.squeeze(" ").strip!
       string
     else
       ""
@@ -112,7 +113,7 @@ class LenaParser
     while true
       if end_index < text_length
         start_index = end_index
-        end_index = string.index(%r{\.|\?}, end_index)
+        end_index = string.index(%r{\.|\?|\*}, end_index)
         end_index ||= text_length
         aa << string[start_index...end_index.next].strip
         end_index += 1
@@ -128,7 +129,7 @@ class LenaParser
   def filter_array(speaker, aa)
     aa.each_with_index do |val, inx|
       if aa[inx.next]
-        if val.length && aa[inx.next].length < MAX_CHR_PER_LINE
+        if val.length + aa[inx.next].length <= MAX_CHR_PER_LINE*2
           aa[inx] << " #{aa[inx.next]}"
           aa.delete_at(inx.next)
         end

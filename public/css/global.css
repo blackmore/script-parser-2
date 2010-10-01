@@ -63,3 +63,8 @@ li#green {
 	background-color: #000;
 	width: 150px;
 }
+
+#version {
+	font-size: 15px;
+	color: #bbc1d2;
+}
