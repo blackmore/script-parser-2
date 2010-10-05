@@ -49,7 +49,7 @@ class LenaParser
   def create_subtitle_object(speaker, text)
     block = Dialog.new
     block.speaker = clean_speaker(speaker)
-    block.text(text)
+    block.text = text
     block.duration = calc_duration(text)
     @dialogs << block
   end
