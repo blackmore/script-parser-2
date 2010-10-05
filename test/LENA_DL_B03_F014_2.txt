@@ -22,7 +22,7 @@ LENA
 Ich komme! Und du gehst jetzt besser.<<D
 DAVID
 Moment mal, ich möchte erst ne Antwort.<<D
-LENA
+LENA                  
 Ok. Die Antwort ist: ich kündige.<<D
 AMELIE
 Von wem redest du?<<D
@@ -63,9 +63,22 @@ Ihr kennt euch, Schatz?<<D
 /Vorspann/
 
 
-01401A.A.D. EXT. STRASSE / AHRTALA/T
-01:30LENA, DAVID, VANESSA, TONY Lena glaubt enttäuscht, David hat ihr die ganze Zeit etwas vorgemacht.Spieltag
-03#1. LENA
+014
+01
+A.A.D. EXT. STRASSE / AHRTAL
+A/T
+
+01:30
+
+LENA, DAVID, VANESSA, TONY 
+
+
+
+Lena glaubt enttäuscht, David hat ihr die ganze Zeit etwas vorgemacht.
+Spieltag
+03
+#
+1. LENA
 Ja, wir kennen uns…<<D
 2. DAVID
 Lena arbeitet für meine Großmutter.<<D
@@ -112,9 +125,22 @@ Wieso? Das war doch eine sehr aufschlussreiche Begegnung.<<D
 
 ***
 
-01402POLIZEIWACHEI/T
-01:15MICHA, GABYGaby leugnet, schwanger von Frank zu sein.Spieltag
-03#23. MICHA
+014
+02
+POLIZEIWACHE
+I/T
+
+01:15
+
+MICHA, GABY
+
+
+
+Gaby leugnet, schwanger von Frank zu sein.
+Spieltag
+03
+#
+23. MICHA
 So schwer kann die Antwort doch nicht sein.<<D
 24. GABY
 Nein.<<D
@@ -137,9 +163,22 @@ Das ist meine Privatangelegenheit. Morgen! Morgen.<<D
 
 ***
 
-01403A.D. EXT. SCHLOSS / VORFAHRTA/T
-01:05DAVID, VANESSADavid will mit Vanessa nichts mehr zu tun haben.Spieltag
-03#33. VANESSA
+014
+03
+A.D. EXT. SCHLOSS / VORFAHRT
+A/T
+
+01:05
+
+DAVID, VANESSA
+
+
+
+David will mit Vanessa nichts mehr zu tun haben.
+Spieltag
+03
+#
+33. VANESSA
 David, jetzt warte doch mal. David, bitte.<<D
 34. DAVID
 Teresa, das mit uns ist vorbei.<<D
@@ -162,9 +201,22 @@ Glaubst du, ich durchschaue dich nicht, Teresa? Ich habe keine Lust mehr auf dei
 
 ***
 
-01404SCHLOSS / SPEISEZIMMERI/T
-01:25AMELIE, RAFAEL, DAVID, HUND MINIRafaels Plan scheint aufzugehen.Spieltag
-03#43. RAFAEL
+014
+04
+SCHLOSS / SPEISEZIMMER
+I/T
+
+01:25
+
+AMELIE, RAFAEL, DAVID, HUND MINI
+
+
+
+Rafaels Plan scheint aufzugehen.
+Spieltag
+03
+#
+43. RAFAEL
 So .Das ist gut, Mutter. Du musst etwas zu dir nehmen.<<D
 44. DAVID
 Soll ich dich ablösen?<<D
@@ -201,9 +253,22 @@ Jaja, geh nur. Ich kümmere mich um sie.<<D
 
 ***
 
-01405WOHNUNG SANDER / ZIMMER MICHAI/T
-01:35MICHA, JASMIN Micha lässt es keine Ruhe: Er glaubt dass Gaby lügt.Spieltag
-03#60. JASMIN
+014
+05
+WOHNUNG SANDER / ZIMMER MICHA
+I/T
+
+01:35
+
+MICHA, JASMIN 
+
+
+
+Micha lässt es keine Ruhe: Er glaubt dass Gaby lügt.
+Spieltag
+03
+#
+60. JASMIN
 Hast du schon deinen ersten Fall gelöst, oder warum hat das so lange auf der Wache gedauert?<<D
 61. MICHA
 Papa war nicht da.<<D
@@ -238,9 +303,22 @@ Was weiß ich?! Wenn er es nicht tut, trennt sich wahrscheinlich Mama. Das kann 
 
 ***
 
-01406A.A.D. INT. BÜRO RAFAEL I/T
-01:50RAFAEL, VANESSAVanessa kann nicht verkraften, dass David ihr die Gesellschafterin seiner Großmutter vorzieht.Spieltag
-03#76. VANESSA
+014
+06
+A.A.D. INT. BÜRO RAFAEL 
+I/T
+
+01:50
+
+RAFAEL, VANESSA
+
+
+
+Vanessa kann nicht verkraften, dass David ihr die Gesellschafterin seiner Großmutter vorzieht.
+Spieltag
+03
+#
+76. VANESSA
 Da bist du ja endlich. Soll ich die ganze Arbeit heute allein machen!<<D
 77. RAFAEL
 Ich habe den wichtigsten Teil schon erledigt. Das Opiat wirkt besser, als ich dachte…<<D
@@ -283,9 +361,22 @@ Ich habe doch gesagt, das Opiat wirkt hervorragend. Meine Mutter ist nicht mehr 
 
 ***
 
-01407WOHNUNG GABY / WOHNKÜCHE + HAUSFLURI/T
-02:00MICHA, GABY Gaby gibt unter Druck zu, dass ihr ungeborenes Kind von Frank ist.Spieltag
-03#96. MICHA
+014
+07
+WOHNUNG GABY / WOHNKÜCHE + HAUSFLUR
+I/T
+
+02:00
+
+MICHA, GABY 
+
+
+
+Gaby gibt unter Druck zu, dass ihr ungeborenes Kind von Frank ist.
+Spieltag
+03
+#
+96. MICHA
 Ich muss jetzt die Wahrheit wissen.<<D
 97. GABY
 Die Wahrheit?<<D
@@ -313,9 +404,22 @@ Wieso glaubst du mir nicht, dass es ein anderer Mann ist?<<D
 Ich hab euch doch gesehen vor zwei Wochen. Hier vorm Haus. Das Kind ist doch von ihm.<<D
 
 
-01408SCHLOSS / MUSIKZIMMERI/T
-01:50DAVID, TOM David glaubt, Lena für immer verloren zu haben.Spieltag
-03#109. TOM
+014
+08
+SCHLOSS / MUSIKZIMMER
+I/T
+
+01:50
+
+DAVID, TOM 
+
+
+
+David glaubt, Lena für immer verloren zu haben.
+Spieltag
+03
+#
+109. TOM
 Ach Mensch. Und du bist sicher dass du deine Großmutter alleine lassen kannst?<<D
 110. DAVID
 Ja, Janka kümmert sich so lange um sie.<<D
@@ -358,9 +462,22 @@ Nein, Tom, vergiss es. Lena habe ich verloren.<<D
 
 ***
 
-01409WOHNUNG SANDER / KÜCHEI/T
-02:05LENA, TONY, LINDA, MADAME CELINE Lena behauptet, nichts für David zu empfinden.Spieltag
-03#129. TONY
+014
+09
+WOHNUNG SANDER / KÜCHE
+I/T
+
+02:05
+
+LENA, TONY, LINDA, MADAME CELINE 
+
+
+
+Lena behauptet, nichts für David zu empfinden.
+Spieltag
+03
+#
+129. TONY
 Ist ja schon ne Klassefrau, die Freundin von deinem Grafen. Sind die eigentlich schon lange zusammen?<<D
 130. LENA
 Keine Ahnung. Er hat sie noch nicht erwähnt.<<D
@@ -417,9 +534,22 @@ Geben Sie mir bitte Ihre Hand und konzentrieren Sie sich ganz auf die Kugel.<<D
 
 ***
 
-01410SCHLOSS / HALLE-TREPPEI/T
-00:55RAFAEL, JANKA, DOKTOR BRAUNER Rafael schickt Janka weg, um seinen Plan weiter voranzutreiben.Spieltag
-03#156. RAFAEL
+014
+10
+SCHLOSS / HALLE-TREPPE
+I/T
+
+00:55
+
+RAFAEL, JANKA, DOKTOR BRAUNER 
+
+
+
+Rafael schickt Janka weg, um seinen Plan weiter voranzutreiben.
+Spieltag
+03
+#
+156. RAFAEL
 Hallo Janka. Wie geht es meiner Mutter?<<D
 157. JANKA
 Guten Tag. Der Arzt war immer noch nicht da.<<D
@@ -446,9 +576,22 @@ Gut… aber rufen Sie mich an, wenn was ist.<<D
 
 ***
 
-01411WOHNUNG GABY / WOHNKÜCHEI/T
-00:55MICHA, GABY Gaby appelliert an Micha zu schweigen.Spieltag
-03#168. MICHA
+014
+11
+WOHNUNG GABY / WOHNKÜCHE
+I/T
+
+00:55
+
+MICHA, GABY 
+
+
+
+Gaby appelliert an Micha zu schweigen.
+Spieltag
+03
+#
+168. MICHA
 Junge oder Mädchen?<<D
 169. GABY
 Ich weiß es noch nicht.<<D
@@ -487,9 +630,22 @@ Du kümmerst dich trotzdem um sie. Das ehrt dich, aber es ist ne andere Situatio
 
 ***
 
-01412WOHNUNG SANDER / KÜCHEI/T
-02:00LENA, PIA, LINDA, MADAME CELINE Lena lässt sich die Zukunft weissagen.Spieltag
-03#186. LENA
+014
+12
+WOHNUNG SANDER / KÜCHE
+I/T
+
+02:00
+
+LENA, PIA, LINDA, MADAME CELINE 
+
+
+
+Lena lässt sich die Zukunft weissagen.
+Spieltag
+03
+#
+186. LENA
 Ist meine Zukunft so kurz, dass Sie so wenig erkennen?<<D
 187. LINDA
 Lena, Madame Celine kann nur den Widerschein davon sehen, was du in diese Kugel hinein leitest.<<D
@@ -532,9 +688,22 @@ Entschuldigung. Kann mir mal jemand erklären, was hier los ist?<<D
 
 ***
 
-01413SCHLOSS / WB AMELIEI/T
-00:30DAVID, AMELIE, RAFAEL, DOKTOR BRAUNERDavid ist höchst beunruhigt, als der Doktor bei Amelie Demenz diagnostiziert.Spieltag
-03#206. DOKTOR BRAUNER
+014
+13
+SCHLOSS / WB AMELIE
+I/T
+
+00:30
+
+DAVID, AMELIE, RAFAEL, DOKTOR BRAUNER
+
+
+
+David ist höchst beunruhigt, als der Doktor bei Amelie Demenz diagnostiziert.
+Spieltag
+03
+#
+206. DOKTOR BRAUNER
 Die geistige Verwirrtheit Ihrer Mutter spricht leider für den Beginn einer Demenzerkrankung.<<D
 207. RAFAEL
 Anzeichen dafür gibt es ja schon länger.<<D
@@ -573,9 +742,22 @@ Lena? Lena, wo sind Sie denn? Fritz, warum habt ihr mir meine Lena weggenommen?<
 
 ***
 
-01414WOHNUNG SANDER / ZIMMER LENA I/T
-02:00LENA, CONNY, STIMME DAVIDLena redet sich ein, dass sie nur wegen Amelie zu weiterem Kontakt mit David bereit ist. Spieltag
-03#224. CONNY
+014
+14
+WOHNUNG SANDER / ZIMMER LENA 
+I/T
+
+02:00
+
+LENA, CONNY, STIMME DAVID
+
+
+
+Lena redet sich ein, dass sie nur wegen Amelie zu weiterem Kontakt mit David bereit ist. 
+Spieltag
+03
+#
+224. CONNY
 Ne echte Wahrsagerin? Da komme ich ja richtig in Versuchung.<<D
 225. LENA
 Ach, das ist reine Zeitverschwendung.<<D
@@ -618,9 +800,22 @@ Es ist wegen Amelie. Es geht ihr schlecht.<<D
 
 ***
 
-01415SCHLOSS / WB AMELIE + SCHLAFZIMMERI/T
-01:25LENA, DAVID, AMELIEAmelie freut sich über Lenas Besuch – und David auch.Spieltag
-03#244. LENA
+014
+15
+SCHLOSS / WB AMELIE + SCHLAFZIMMER
+I/T
+
+01:25
+
+LENA, DAVID, AMELIE
+
+
+
+Amelie freut sich über Lenas Besuch – und David auch.
+Spieltag
+03
+#
+244. LENA
 Hallo, Amelie…<<D
 245. AMELIE
 Lena… Machen Sie doch nicht so ein ernstes Gesicht…<<D
@@ -639,9 +834,22 @@ Nein nein, bleibt einfach bei mir, Kinder.<<D
 
 ***
 
-01416WOHNUNG SANDER / WOHN-ESSBEREICHI/T
-02:15MICHA, PIA, FRANK, JASMIN Michas verändertes Verhalten macht Frank misstrauisch.Spieltag
-03#252. FRANK
+014
+16
+WOHNUNG SANDER / WOHN-ESSBEREICH
+I/T
+
+02:15
+
+MICHA, PIA, FRANK, JASMIN 
+
+
+
+Michas verändertes Verhalten macht Frank misstrauisch.
+Spieltag
+03
+#
+252. FRANK
 Nächstes Mal sagst du deiner Mutter Bescheid, wenn du nicht mit isst.<<D
 253. MICHA
 Sorry, ich musste noch ein paar Sachen besorgen. Süßes und Saures. Wenn du mal wieder eine Heißhungerattacke bekommst.<<D
@@ -680,9 +888,22 @@ Ich hab keine Lust mehr, in Papas Fußstapfen zu treten.<<D
 
 ***
 
-01417SCHLOSS / KÜCHEI/N
-01:45LENA, DAVID So schwer es ihr auch fällt, Lena behauptet auch vor David, dass sie mit ihm abgeschlossen hat.Spieltag
-03#270. DAVID
+014
+17
+SCHLOSS / KÜCHE
+I/N
+
+01:45
+
+LENA, DAVID 
+
+
+
+So schwer es ihr auch fällt, Lena behauptet auch vor David, dass sie mit ihm abgeschlossen hat.
+Spieltag
+03
+#
+270. DAVID
 Lena…<<D
 271. LENA
 Deine Großmutter ist wieder eingeschlafen.<<D
@@ -733,9 +954,22 @@ Das ist Schicksal. Und dagegen kann man nichts machen. Außerdem steigst du bald
 
 ***
 
-01418DACHWOHNUNG TOMI/N
-01:40CONNY, TOMConny sagt Tom, was sie von seinem Scheidungskampf hält. Spieltag
-03#294. CONNY
+014
+18
+DACHWOHNUNG TOM
+I/N
+
+01:40
+
+CONNY, TOM
+
+
+
+Conny sagt Tom, was sie von seinem Scheidungskampf hält. 
+Spieltag
+03
+#
+294. CONNY
 Hast du den Hund überhaupt schon mal gefüttert?<<D
 295. TOM
 Das war bisher immer Silkes Job. Ey, nur ein Spaß! Pedro ist mein Ein-und-Alles.<<D
@@ -766,9 +1000,22 @@ Du Conny, es ist jetzt Pedros Zeit, wir müssen Gassi aber, wenn wir zurück sin
 
 ***
 
-01419SCHLOSS / WB AMELIE + SCHLAFZIMMER AMELIE I/N
-00:40LENA, DAVID, AMELIEDavid gibt seiner Sehnsucht nach Lena ein kleinwenig nach.Spieltag
-03#308. LENA
+014
+19
+SCHLOSS / WB AMELIE + SCHLAFZIMMER AMELIE 
+I/N
+
+00:40
+
+LENA, DAVID, AMELIE
+
+
+
+David gibt seiner Sehnsucht nach Lena ein kleinwenig nach.
+Spieltag
+03
+#
+308. LENA
 Was ist denn?<<D
 309. DAVID
 Nichts… Schlaf weiter.<<D
@@ -779,9 +1026,22 @@ Nein, sie schläft tief und fest. Weil du da bist…<<D
 
 ***
 
-01420FRISEURSALONI/T
-01:15PIA, MATHIAS, 2 KUNDINNEN M.T.Mathias teilt Pia mit, dass seine Auszubildende ausfällt.Spieltag
-04#312. MATHIAS
+014
+20
+FRISEURSALON
+I/T
+
+01:15
+
+PIA, MATHIAS, 2 KUNDINNEN M.T.
+
+
+
+Mathias teilt Pia mit, dass seine Auszubildende ausfällt.
+Spieltag
+04
+#
+312. MATHIAS
 Frau Sander. Sie sind das erste Erfreuliche an diesem Tag.<<D
 313. PIA
 Das klingt ja dramatisch. Was ist denn passiert?<<D
@@ -820,9 +1080,22 @@ Es bleibt Ihnen auch gar nichts anderes übrig.<<D
 
 ***
 
-01421A.A.D. INT. BÜRO RAFAEL I/T
-01:35RAFAEL, VANESSA Rafael ist zuversichtlich, dass er schon bald sein Ziel erreicht haben wird.Spieltag
-04#330. VANESSA
+014
+21
+A.A.D. INT. BÜRO RAFAEL 
+I/T
+
+01:35
+
+RAFAEL, VANESSA 
+
+
+
+Rafael ist zuversichtlich, dass er schon bald sein Ziel erreicht haben wird.
+Spieltag
+04
+#
+330. VANESSA
 Liebling?! Ich bin dann mal weg, ja?<<D
 331. RAFAEL
 Was hast du vor?<<D
@@ -853,15 +1126,41 @@ Ciao.<<D
 
 ***
 
-01422SCHLOSS / WB AMELIE + SCHLAFZIMMER AMELIE I/T
-00:40LENA, DAVID, AMELIEDavid schöpft Hoffnung, dass er Lena doch noch etwas bedeutet.Spieltag
-04#Stumme Szene mit Musik.
+014
+22
+SCHLOSS / WB AMELIE + SCHLAFZIMMER AMELIE 
+I/T
+
+00:40
+
+LENA, DAVID, AMELIE
+
+
+
+David schöpft Hoffnung, dass er Lena doch noch etwas bedeutet.
+Spieltag
+04
+#
+Stumme Szene mit Musik.
 
 ***
 
-01423WOHNUNG GABY / WOHNKÜCHEI/T
-01:30FRANK, GABY Gaby verschweigt Frank, dass Micha die Wahrheit weiß.Spieltag
-04#344. GABY
+014
+23
+WOHNUNG GABY / WOHNKÜCHE
+I/T
+
+01:30
+
+FRANK, GABY 
+
+
+
+Gaby verschweigt Frank, dass Micha die Wahrheit weiß.
+Spieltag
+04
+#
+344. GABY
 Frank…? Ist was passiert?<<D
 345. FRANK
 Ich wollte mal schauen, wie es dir geht. Süßes und Saures. Falls du plötzlich mal eine Heißhungerattacke bekommst.<<D
@@ -874,9 +1173,22 @@ Wow… – Ja, willst du reinkommen? Ich hab zwar nur…<<D
 
 ***
 
-01424LOFT TONYI/T
-01:25VANESSA, TONY Vanessa will Tony als Verbündeten gewinnen.Spieltag
-04#349. TONY
+014
+24
+LOFT TONY
+I/T
+
+01:25
+
+VANESSA, TONY 
+
+
+
+Vanessa will Tony als Verbündeten gewinnen.
+Spieltag
+04
+#
+349. TONY
 Im Prinzip ist der Wagen fertig. Ja, umgespritzt ist er auch. Die Fahrgestellnummer ist ach ok, ja. Ja, die Papiere krieg ich noch. Ja, ansonsten, (…) ey, nicht übers Telefon. Ich ruf dich zurück.<<D
 350. VANESSA
 Schön, dass Sie sich so freuen, mich zu sehen.<<D
@@ -903,9 +1215,22 @@ Es ist nicht leicht, ihn zu vergessen. Deshalb sollten wir zusammenarbeiten.<<D
 
 ***
 
-01425SCHLOSS / HALLE-TREPPEI/T
-01:00LENA, DAVIDDavid will Lena davon abhalten, zu gehen.Spieltag
-04#361. DAVID
+014
+25
+SCHLOSS / HALLE-TREPPE
+I/T
+
+01:00
+
+LENA, DAVID
+
+
+
+David will Lena davon abhalten, zu gehen.
+Spieltag
+04
+#
+361. DAVID
 Warum gibst du nicht zu, dass du eigentlich gar nicht weg willst…<<D
 362. LENA
 Wie lange stehst du schon da?<<D

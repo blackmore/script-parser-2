@@ -49,7 +49,6 @@ class LenaParser
   def create_subtitle_object(speaker, text)
     block = Dialog.new
     block.speaker = clean_speaker(speaker)
-    block.text = text.gsub("__*", "...")
     block.duration = calc_duration(text)
     @dialogs << block
   end
@@ -64,7 +63,10 @@ class LenaParser
       string.chomp!
       string.gsub!(/\t+|\(.+?\)\s*/,'')
       string.gsub!(/‘|’|„|“/, "'")
-      string.gsub!(/…|\.\.\./, "__*") # Used the three marks to keep the count clean
+      string.squeeze!("?|!")
+      string.gsub!(/!\?|\?!/, "?")
+      string.gsub!(/…|!|\.\.\./, ".") # Used the three marks to keep the count clean
+      string.gsub!(/(Na)(ja)/i, '\1 \2')
       string.squeeze(" ").strip
     else
       ""
@@ -101,7 +103,7 @@ class LenaParser
   end
   
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  # Splits large text blocks on sentences and question marks creating an array
+  # Splits large text blocks on sentences, ? and ! creating an array
   # of results.
   
   def split_on_sentences(speaker, string)
@@ -112,28 +114,17 @@ class LenaParser
     while true
       if end_index < text_length
         start_index = end_index
-        end_index = string.index(%r{\.|\?|\*}, end_index)
+        end_index = string.index(%r{\.|\?|!}, end_index)
         end_index ||= text_length
         aa << string[start_index...end_index.next].strip
         end_index += 1
       end
       break  unless end_index < text_length
     end
-    filter_array(speaker, aa)
+    batch_subs(speaker, aa)
   end
-
-  # Takes results from above and groups values if they still comply to the
-  # max_chr_per_line.
   
-  def filter_array(speaker, aa)
-    aa.each_with_index do |val, inx|
-      if aa[inx.next]
-        if val.length + aa[inx.next].length <= MAX_CHR_PER_LINE*2
-          aa[inx] << " #{aa[inx.next]}"
-          aa.delete_at(inx.next)
-        end
-      end
-    end
+  def batch_subs(speaker, aa)
     aa.each do |text|
       create_subtitle_object(speaker, text)
     end
