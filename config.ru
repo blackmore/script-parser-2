@@ -1,2 +1,2 @@
-require 'lenaparser'
+require './lenaparser'
 run Sinatra::Application

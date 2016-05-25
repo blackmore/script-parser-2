@@ -4,7 +4,7 @@ require '../lenaparser'
 class StringTest < Test::Unit::TestCase
 
   def setup
-   @file = File.new("/Users/nigel/Desktop/lena_01/test/LENA_DL_B03_F014_2.txt", 'r')
+   @file = File.new("./LENA_DL_B03_F014_2.txt", 'r')
    @string = "Ich weiß, (more) ich… ich hab (stuff) mich zuerst?! naja verhalten!!!??? Ich musste!! Naja auch erstmal alles verarbeiten… Aber jetzt…"
    @lenaparser = LenaParser.new(@file, "LENA_DL_B03_F014_2.txt")
    @string_clean = "Ich weiß, ich. ich hab mich zuerst? na ja verhalten? Ich musste. Na ja auch erstmal alles verarbeiten. Aber jetzt."
@@ -21,7 +21,7 @@ class StringTest < Test::Unit::TestCase
   end
   
   def test_number_of_subtitles
-    assert_equal(619, @lenaparser.dialogs.length)
+    assert_equal(618, @lenaparser.dialogs.length)
   end
   
   def test_name_of_subtitle_no3
@@ -33,6 +33,11 @@ class StringTest < Test::Unit::TestCase
     text = @lenaparser.clean_text(@string)
     array = @lenaparser.split_on_sentences("1. NAME", text)
     assert_equal(result, @lenaparser.batch_subs("1. NAME", array))
+  end
+  
+  def test_catch_second_line
+    result = "Ich komme! Und du gehst jetzt besser. Ich komme! Und du gehst jetzt besser."
+    #assert_equal(result, @lenaparser.dialogs[1])
   end
   
 end

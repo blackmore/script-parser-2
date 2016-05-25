@@ -3,6 +3,14 @@ require 'sinatra'
 require 'builder'
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# README
+# BUGS - empty subtitles created if the end of a string (after a dot for example) has /s
+# BUGS - subtitles created with only a full stop. Often happens if there are morn than two
+# points at then end of a string.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # CONSTANTS
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 MAX_DURATION = 7

@@ -20,6 +20,7 @@ DAVID
 Ist Tony bei dir?<<D
 LENA
 Ich komme! Und du gehst jetzt besser.<<D
+Ich komme! Und du gehst jetzt besser.<<D
 DAVID
 Moment mal, ich möchte erst ne Antwort.<<D
 LENA                  
