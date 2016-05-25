@@ -1,3 +1,4 @@
+#encoding: UTF-8
 require 'rubygems'
 require 'sinatra'
 require 'builder'
@@ -44,7 +45,7 @@ class LenaParser
        end
      end
   end
-  
+
   class Dialog
     attr_accessor :text, :speaker, :duration
     def initialize
@@ -53,7 +54,7 @@ class LenaParser
        @duration = 0.0 # unit in seconds
     end
   end
-  
+
   def create_subtitle_object(speaker, text)
     block = Dialog.new
     block.speaker = clean_speaker(speaker)
@@ -61,12 +62,12 @@ class LenaParser
     block.duration = calc_duration(text)
     @dialogs << block
   end
-  
+
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   # TOOLS
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   # Replaces some unicode chrs, apostrophes and removes extra white spaces
-  
+
   def clean_text(string)
     if string
       string.chomp!
@@ -81,10 +82,10 @@ class LenaParser
       ""
     end
   end
-  
+
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   # Stripes out number from the name tag and capitalizes.
-  
+
   def clean_speaker(string)
     if string
       string.upcase!
@@ -98,10 +99,10 @@ class LenaParser
       "NO_SPEAKER"
     end
   end
- 
+
  # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  # Concerdering the max and min calculates a reading speed.
- 
+
   def calc_duration(string)
     value = string.length.to_f*1/CHR_PER_SECOND
     number = case value
@@ -110,11 +111,11 @@ class LenaParser
       else value
     end
   end
-  
+
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   # Splits large text blocks on sentences, ? and ! creating an array
   # of results.
-  
+
   def split_on_sentences(speaker, string)
     aa = []
     end_index = 0
@@ -132,7 +133,7 @@ class LenaParser
     end
     batch_subs(speaker, aa)
   end
-  
+
   def batch_subs(speaker, aa)
     aa.each do |text|
       create_subtitle_object(speaker, text)
@@ -202,7 +203,7 @@ post '/' do
       @error = "NO FILE SELECTED"
       return erb :form
     end
-    
+
    begin
       @newxml = Tempfile.new("_NEW#{name}")
       @newxml.puts build_DFXL.call(LenaParser.new(tmpfile, name))

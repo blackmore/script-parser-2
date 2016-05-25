@@ -23,7 +23,7 @@ Ich komme! Und du gehst jetzt besser.<<D
 Ich komme! Und du gehst jetzt besser.<<D
 DAVID
 Moment mal, ich möchte erst ne Antwort.<<D
-LENA                  
+LENA
 Ok. Die Antwort ist: ich kündige.<<D
 AMELIE
 Von wem redest du?<<D
@@ -71,7 +71,7 @@ A/T
 
 01:30
 
-LENA, DAVID, VANESSA, TONY 
+LENA, DAVID, VANESSA, TONY
 
 
 
@@ -261,7 +261,7 @@ I/T
 
 01:35
 
-MICHA, JASMIN 
+MICHA, JASMIN
 
 
 
@@ -306,7 +306,7 @@ Was weiß ich?! Wenn er es nicht tut, trennt sich wahrscheinlich Mama. Das kann 
 
 014
 06
-A.A.D. INT. BÜRO RAFAEL 
+A.A.D. INT. BÜRO RAFAEL
 I/T
 
 01:50
@@ -369,7 +369,7 @@ I/T
 
 02:00
 
-MICHA, GABY 
+MICHA, GABY
 
 
 
@@ -412,7 +412,7 @@ I/T
 
 01:50
 
-DAVID, TOM 
+DAVID, TOM
 
 
 
@@ -428,7 +428,7 @@ Ja, Janka kümmert sich so lange um sie.<<D
 Du hast zurzeit ganz schön viele Baustellen.<<D
 112. DAVID
 Komm. Lass uns anfangen.<<D
-113. 
+113.
 Ja, hast du die neuen Tracks schon vorbereitet?<<D
 114. DAVID
 Ja klar…<<D
@@ -470,7 +470,7 @@ I/T
 
 02:05
 
-LENA, TONY, LINDA, MADAME CELINE 
+LENA, TONY, LINDA, MADAME CELINE
 
 
 
@@ -542,7 +542,7 @@ I/T
 
 00:55
 
-RAFAEL, JANKA, DOKTOR BRAUNER 
+RAFAEL, JANKA, DOKTOR BRAUNER
 
 
 
@@ -584,7 +584,7 @@ I/T
 
 00:55
 
-MICHA, GABY 
+MICHA, GABY
 
 
 
@@ -638,7 +638,7 @@ I/T
 
 02:00
 
-LENA, PIA, LINDA, MADAME CELINE 
+LENA, PIA, LINDA, MADAME CELINE
 
 
 
@@ -745,7 +745,7 @@ Lena? Lena, wo sind Sie denn? Fritz, warum habt ihr mir meine Lena weggenommen?<
 
 014
 14
-WOHNUNG SANDER / ZIMMER LENA 
+WOHNUNG SANDER / ZIMMER LENA
 I/T
 
 02:00
@@ -754,7 +754,7 @@ LENA, CONNY, STIMME DAVID
 
 
 
-Lena redet sich ein, dass sie nur wegen Amelie zu weiterem Kontakt mit David bereit ist. 
+Lena redet sich ein, dass sie nur wegen Amelie zu weiterem Kontakt mit David bereit ist.
 Spieltag
 03
 #
@@ -842,7 +842,7 @@ I/T
 
 02:15
 
-MICHA, PIA, FRANK, JASMIN 
+MICHA, PIA, FRANK, JASMIN
 
 
 
@@ -896,7 +896,7 @@ I/N
 
 01:45
 
-LENA, DAVID 
+LENA, DAVID
 
 
 
@@ -966,7 +966,7 @@ CONNY, TOM
 
 
 
-Conny sagt Tom, was sie von seinem Scheidungskampf hält. 
+Conny sagt Tom, was sie von seinem Scheidungskampf hält.
 Spieltag
 03
 #
@@ -1003,7 +1003,7 @@ Du Conny, es ist jetzt Pedros Zeit, wir müssen Gassi aber, wenn wir zurück sin
 
 014
 19
-SCHLOSS / WB AMELIE + SCHLAFZIMMER AMELIE 
+SCHLOSS / WB AMELIE + SCHLAFZIMMER AMELIE
 I/N
 
 00:40
@@ -1083,12 +1083,12 @@ Es bleibt Ihnen auch gar nichts anderes übrig.<<D
 
 014
 21
-A.A.D. INT. BÜRO RAFAEL 
+A.A.D. INT. BÜRO RAFAEL
 I/T
 
 01:35
 
-RAFAEL, VANESSA 
+RAFAEL, VANESSA
 
 
 
@@ -1129,7 +1129,7 @@ Ciao.<<D
 
 014
 22
-SCHLOSS / WB AMELIE + SCHLAFZIMMER AMELIE 
+SCHLOSS / WB AMELIE + SCHLAFZIMMER AMELIE
 I/T
 
 00:40
@@ -1153,7 +1153,7 @@ I/T
 
 01:30
 
-FRANK, GABY 
+FRANK, GABY
 
 
 
@@ -1181,7 +1181,7 @@ I/T
 
 01:25
 
-VANESSA, TONY 
+VANESSA, TONY
 
 
 
@@ -1275,4 +1275,3 @@ Block 03		014.01
 
 
 Block 03		014 Precaps
-
