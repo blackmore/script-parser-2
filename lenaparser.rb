@@ -19,10 +19,10 @@ MIN_DURATION = 1.5
 MAX_CHR_PER_LINE = 37
 CHR_PER_SECOND = 15
 START_TIME = 36000.0
-SPEAKER_1 = "LENA"
-SPEAKER_2 = "DAVID"
-SPEAKER_3 = "TONY"
-SPEAKER_4 = "RAFAEL"
+# SPEAKER_1 = "LENA"
+# SPEAKER_2 = "DAVID"
+# SPEAKER_3 = "TONY"
+# SPEAKER_4 = "RAFAEL"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # PARSER
@@ -34,6 +34,10 @@ class LenaParser
      @dialogs = []
      @file_name = name
      @tc = START_TIME
+     @speaker1 = params[:green]
+     @speaker2 = params[:yellow]
+     @speaker3 = params[:magenta]
+     @speaker4 = params[:cyan]
 
      complete_text = file.read.force_encoding(Encoding::UTF_8)
      complete_text.scan(/^(.+)\r*\n(.+)<<D\r*\n/) do |speaker, text|
@@ -162,19 +166,19 @@ build_DFXL = lambda do |subFile|
         subFile.dialogs.each do |dialog|
           intime = subFile.tc
           outtime = subFile.tc + dialog.duration.to_f
-          if dialog.speaker == SPEAKER_1
+          if dialog.speaker == @speaker1
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
               b.span(dialog.text, 'tts:color'=>"#FFFF00")
             end
-          elsif dialog.speaker == SPEAKER_2
+          elsif dialog.speaker == @speaker2
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
               b.span(dialog.text, 'tts:color'=>"#00FFFF")
             end
-          elsif dialog.speaker == SPEAKER_3
+          elsif dialog.speaker == @speaker3
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
               b.span(dialog.text, 'tts:color'=>"#00FF00")
             end
-          elsif dialog.speaker == SPEAKER_4
+          elsif dialog.speaker == @speaker4
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
               b.span(dialog.text, 'tts:color'=>"#FF00FF")
             end
