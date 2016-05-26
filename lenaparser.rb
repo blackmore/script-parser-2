@@ -29,15 +29,11 @@ START_TIME = 36000.0
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 class LenaParser
-  attr_accessor :file_name, :dialogs, :tc, :green, :yellow, :magenta, :cyan
+  attr_accessor :file_name, :dialogs, :tc, :speaker1, :speaker2, :speaker3, :speaker4
   def initialize(file, name)
      @dialogs = []
      @file_name = name
      @tc = START_TIME
-     @speaker1 = params[:green]
-     @speaker2 = params[:yellow]
-     @speaker3 = params[:magenta]
-     @speaker4 = params[:cyan]
 
      complete_text = file.read.force_encoding(Encoding::UTF_8)
      complete_text.scan(/^(.+)\r*\n(.+)<<D\r*\n/) do |speaker, text|
@@ -212,6 +208,11 @@ post '/' do
     end
 
    begin
+      @speaker1 = params[:green]
+      @speaker2 = params[:yellow]
+      @speaker3 = params[:magenta]
+      @speaker4 = params[:cyan]
+      
       @newxml = Tempfile.new("_NEW#{name}")
       @newxml.puts build_DFXL.call(LenaParser.new(tmpfile, name))
       @newxml.close
