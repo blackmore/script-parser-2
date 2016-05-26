@@ -19,10 +19,10 @@ MIN_DURATION = 1.5
 MAX_CHR_PER_LINE = 37
 CHR_PER_SECOND = 15
 START_TIME = 36000.0
-# SPEAKER_1 = "LENA"
-# SPEAKER_2 = "DAVID"
-# SPEAKER_3 = "TONY"
-# SPEAKER_4 = "RAFAEL"
+SPEAKER_1 = "YELLOW"
+SPEAKER_2 = "CYAN"
+SPEAKER_3 = "GREEN"
+SPEAKER_4 = "MENGENTA"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # PARSER
@@ -208,11 +208,6 @@ post '/' do
     end
 
    begin
-      @speaker1 = params[:green]
-      @speaker2 = params[:yellow]
-      @speaker3 = params[:magenta]
-      @speaker4 = params[:cyan]
-
       @newxml = Tempfile.new("_NEW#{name}")
       @newxml.puts build_DFXL.call(LenaParser.new(tmpfile, name))
       @newxml.close
