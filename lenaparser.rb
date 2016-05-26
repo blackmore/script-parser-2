@@ -164,11 +164,11 @@ build_DFXL = lambda do |subFile|
           outtime = subFile.tc + dialog.duration.to_f
           if dialog.speaker == @speaker1
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
-              b.span(dialog.text, 'tts:color'=>"#FFFF00")
+              b.span(@speaker1, 'tts:color'=>"#FFFF00")
             end
           elsif dialog.speaker == @speaker2
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
-              b.span(dialog.text, 'tts:color'=>"#00FFFF")
+              b.span(@speaker1, 'tts:color'=>"#00FFFF")
             end
           elsif dialog.speaker == @speaker3
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
@@ -176,10 +176,10 @@ build_DFXL = lambda do |subFile|
             end
           elsif dialog.speaker == @speaker4
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
-              b.span(dialog.text, 'tts:color'=>"#FF00FF")
+              b.span(@speaker1, 'tts:color'=>"#FF00FF")
             end
           else
-            b.p(dialog.text, :begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr" )
+            b.p(@speaker2, :begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr" )
           end
          subFile.tc = outtime + 0.16
         end
@@ -212,7 +212,7 @@ post '/' do
       @speaker2 = params[:yellow]
       @speaker3 = params[:magenta]
       @speaker4 = params[:cyan]
-      
+
       @newxml = Tempfile.new("_NEW#{name}")
       @newxml.puts build_DFXL.call(LenaParser.new(tmpfile, name))
       @newxml.close
