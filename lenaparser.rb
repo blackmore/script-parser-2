@@ -213,7 +213,7 @@ post '/' do
       @newxml.close
       send_file @newxml.path, :type => 'xml', :disposition => 'attachment', :filename => "#{name.sub(/.txt/i, "")}-#{Time.now}"
    rescue Exception => e
-      @error =  e.message + " " e.backtrace.inspect #"PROBLEM WITH FILE: Check that you have uploaded the correct file format" + boom
+      @error =  e.message + " " + e.backtrace.inspect #"PROBLEM WITH FILE: Check that you have uploaded the correct file format" + boom
       return erb :form
    end
 end
