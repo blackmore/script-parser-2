@@ -29,7 +29,7 @@ START_TIME = 36000.0
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 class LenaParser
-  attr_accessor :file_name, :dialogs, :tc
+  attr_accessor :file_name, :dialogs, :tc, :green, :yellow, :magenta, :cyan
   def initialize(file, name)
      @dialogs = []
      @file_name = name
