@@ -162,24 +162,24 @@ build_DFXL = lambda do |subFile|
         subFile.dialogs.each do |dialog|
           intime = subFile.tc
           outtime = subFile.tc + dialog.duration.to_f
-          if dialog.speaker == @speaker1
+          if dialog.speaker == SPEAKER_1
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
-              b.span(@speaker1, 'tts:color'=>"#FFFF00")
+              b.span(dialog.text, 'tts:color'=>"#FFFF00")
             end
-          elsif dialog.speaker == @speaker2
+          elsif dialog.speaker == SPEAKER_2
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
-              b.span(@speaker1, 'tts:color'=>"#00FFFF")
+              b.span(dialog.text, 'tts:color'=>"#00FFFF")
             end
-          elsif dialog.speaker == @speaker3
+          elsif dialog.speaker == SPEAKER_3
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
               b.span(dialog.text, 'tts:color'=>"#00FF00")
             end
-          elsif dialog.speaker == @speaker4
+          elsif dialog.speaker == SPEAKER_4
             b.p(:begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr") do
-              b.span(@speaker1, 'tts:color'=>"#FF00FF")
+              b.span(dialog.text, 'tts:color'=>"#FF00FF")
             end
           else
-            b.p(@speaker2, :begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr" )
+            b.p(dialog.text, :begin =>"#{sprintf("%.2f", intime)}s", :end => "#{sprintf("%.2f", outtime)}", :dur => "#{sprintf("%.2f", dialog.duration)}s", :style => "default.center", "tts:direction" => "ltr" )
           end
          subFile.tc = outtime + 0.16
         end

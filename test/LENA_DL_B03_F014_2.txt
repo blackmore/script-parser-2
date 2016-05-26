@@ -16,12 +16,12 @@ PRODUZENTEN	QUIRIN BERG, MAX WIEDEMANN
 JAN RICHARD SCHUSTER
 
 RECAPS
-DAVID
+YELLOW
 Ist Tony bei dir?<<D
 LENA
 Ich komme! Und du gehst jetzt besser.<<D
 Ich komme! Und du gehst jetzt besser.<<D
-DAVID
+YELLOW
 Moment mal, ich möchte erst ne Antwort.<<D
 LENA
 Ok. Die Antwort ist: ich kündige.<<D
@@ -51,11 +51,11 @@ MICHA
 Papa!<<D
 RAFAEL
 Auf dich, Mutter.<<D
-DAVID
+YELLOW
 Ich hab mich verliebt.<<D
 VANESSA
 In wen?<<D
-DAVID
+YELLOW
 In eine Frau die ich nicht wegen eines Abenteuers verlieren will.<<D
 MICHA
 Das Kind, das Sie bekommen, ist das von meinem Vater?<<D
@@ -171,16 +171,16 @@ A/T
 
 01:05
 
-DAVID, VANESSA
+YELLOW, VANESSA
 
 
 
-David will mit Vanessa nichts mehr zu tun haben.
+YELLOW will mit Vanessa nichts mehr zu tun haben.
 Spieltag
 03
 #
 33. VANESSA
-David, jetzt warte doch mal. David, bitte.<<D
+YELLOW, jetzt warte doch mal. David, bitte.<<D
 34. DAVID
 Teresa, das mit uns ist vorbei.<<D
 35. VANESSA
@@ -412,11 +412,11 @@ I/T
 
 01:50
 
-DAVID, TOM
+YELLOW, TOM
 
 
 
-David glaubt, Lena für immer verloren zu haben.
+YELLOW glaubt, Lena für immer verloren zu haben.
 Spieltag
 03
 #
@@ -696,11 +696,11 @@ I/T
 
 00:30
 
-DAVID, AMELIE, RAFAEL, DOKTOR BRAUNER
+YELLOW, AMELIE, RAFAEL, DOKTOR BRAUNER
 
 
 
-David ist höchst beunruhigt, als der Doktor bei Amelie Demenz diagnostiziert.
+YELLOW ist höchst beunruhigt, als der Doktor bei Amelie Demenz diagnostiziert.
 Spieltag
 03
 #
@@ -931,7 +931,7 @@ Ich bin nur wegen Amelie hier…<<D
 282. DAVID
 Wenn es um Teresa geht diese Frau heute Morgen. Ich bin nicht mit der zusammen…<<D
 283. LENA
-David, das geht mich überhaupt nichts an.<<D
+YELLOW, das geht mich überhaupt nichts an.<<D
 284. DAVID
 Doch. Ich will keine Geheimnisse vor dir haben. Und das mit Teresa, das… das war eine Affäre.<<D
 285. LENA
@@ -1012,7 +1012,7 @@ LENA, DAVID, AMELIE
 
 
 
-David gibt seiner Sehnsucht nach Lena ein kleinwenig nach.
+YELLOW gibt seiner Sehnsucht nach Lena ein kleinwenig nach.
 Spieltag
 03
 #
@@ -1138,7 +1138,7 @@ LENA, DAVID, AMELIE
 
 
 
-David schöpft Hoffnung, dass er Lena doch noch etwas bedeutet.
+YELLOW schöpft Hoffnung, dass er Lena doch noch etwas bedeutet.
 Spieltag
 04
 #
@@ -1227,7 +1227,7 @@ LENA, DAVID
 
 
 
-David will Lena davon abhalten, zu gehen.
+YELLOW will Lena davon abhalten, zu gehen.
 Spieltag
 04
 #
