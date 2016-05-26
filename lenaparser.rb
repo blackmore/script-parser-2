@@ -1,4 +1,4 @@
-#encoding: UTF-8
+# encoding: UTF-8
 require 'rubygems'
 require 'sinatra'
 require 'builder'
@@ -192,6 +192,9 @@ end
 # ROUTES
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+# file = File.open("//Users/nigel/Desktop/test.txt")
+# puts build_DFXL.call(LenaParser.new(file, "dtest.txt"))
+
 get '/' do
   erb :form
 end
@@ -209,8 +212,8 @@ post '/' do
       @newxml.puts build_DFXL.call(LenaParser.new(tmpfile, name))
       @newxml.close
       send_file @newxml.path, :type => 'xml', :disposition => 'attachment', :filename => "#{name.sub(/.txt/i, "")}-#{Time.now}"
-   rescue
-      @error = "PROBLEM WITH FILE: Check that you have uploaded the correct file format"
+   rescue StandardError => bang
+      @error = "PROBLEM WITH FILE: Check that you have uploaded the correct file format" + bang
       return erb :form
    end
 end
