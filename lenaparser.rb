@@ -35,7 +35,7 @@ class LenaParser
      @file_name = name
      @tc = START_TIME
 
-     complete_text = file.read
+     complete_text = file.read.force_encoding(Encoding::UTF_8)
      complete_text.scan(/^(.+)\r*\n(.+)<<D\r*\n/) do |speaker, text|
        clean_text(text)
        if text.length > MAX_CHR_PER_LINE*2
