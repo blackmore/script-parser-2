@@ -60,7 +60,9 @@ class LenaParser
     block.speaker = clean_speaker(speaker)
     block.text = text
     block.duration = calc_duration(text)
-    @dialogs << block
+    if block.text.length > 1
+      @dialogs << block
+    end
   end
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
